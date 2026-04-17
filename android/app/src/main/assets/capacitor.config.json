@@ -1,13 +1,11 @@
 {
-	"appId": "com.example.app",
-	"appName": "nextjs-tailwind-capacitor",
-	"bundledWebRuntime": false,
-	"npmClient": "npm",
+	"appId": "com.superbear.app",
+	"appName": "Gran Facu Aventura",
 	"webDir": "out",
+	"bundledWebRuntime": false,
 	"plugins": {
 		"SplashScreen": {
 			"launchShowDuration": 0
 		}
-	},
-	"cordova": {}
+	}
 }
