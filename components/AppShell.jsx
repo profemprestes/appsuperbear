@@ -7,24 +7,6 @@ import Menu from './Menu';
 
 import Tabs from './pages/Tabs';
 
-import { FaceId } from '@capacitor/core';
-
-// check if device supports Face ID or Touch ID
-FaceId?.isAvailable()?.then(checkResult => {
-  if (checkResult.value) {
-    FaceId.auth()
-      .then(() => {
-        console.log('authenticated');
-      })
-      .catch(error => {
-        // handle rejection errors
-        console.error(error.message);
-      });
-  } else {
-    // use custom fallback authentication here
-  }
-});
-
 setupIonicReact({});
 
 window.matchMedia('(prefers-color-scheme: dark)').addListener(async status => {
