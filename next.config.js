@@ -1,7 +1,11 @@
-module.exports = {
-  basePath: '',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
   images: {
-    domains: ['images.unsplash.com'],
+    unoptimized: true,
   },
   swcMinify: true,
+  // basePath can be adjusted if deploying to a subpath
 };
+
+module.exports = nextConfig;
